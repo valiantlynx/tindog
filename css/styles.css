@@ -2,22 +2,18 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
+h1,
+h2,
+h3 {
+    font-weight: bold;
 }
 
 h2 {
-    font-weight: bold;
     font-size: 3.5rem;
     line-height: 1.5;
-}
-
-h3 {
-    font-weight: bold;
 }
 
 i:hover {
@@ -31,12 +27,30 @@ p {
 
 /*classes's*/
 
+.colored_section {
+    --main-bg-color: #ff4c68;
+    color: #fff;
+}
+
+.white_section {
+    --bg-color: #fff;
+}
+
+.big_heading {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
 .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.features-container {
     padding: 3% 15%;
 }
 
 .feature_box {
-    text-align: center;
     padding: 100px;
 }
 
@@ -49,36 +63,50 @@ p {
     padding-top: 3%;
 }
 
+.social_icon {
+    padding: 20px;
+    color: #ff4c68;
+    text-decoration: none;
+}
+
 
 /*id's*/
 
 #title {
-    background-color: #ff4c68;
+    background-color: var(--main-bg-color);
     height: 70%;
-    color: #ffffff;
+    text-align: left;
 }
 
 #main_img {
     transform: rotate(24deg);
-    width: 70%;
+    width: 20%;
+    position: absolute;
+    right: 250px;
+}
+
+#features {
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 1;
 }
 
 #press {
-    background-color: #ff4c68;
-    text-align: center;
+    background-color: var(--main-bg-color);
 }
 
 #pricing {
-    text-align: center;
     padding: 10%;
 }
 
 #cta {
-    text-align: center;
+    padding: 5% 20%;
+    background-color: var(--main-bg-color);
 }
 
 #footer {
-    text-align: center;
+    padding: 5% 20%;
+    background-color: var(--bg-color);
 }
 
 
@@ -124,13 +152,22 @@ p {
 
 .comments {
     padding: 3% 15%;
-    text-align: center;
-    background-color: #ff4c68;
-    color: #ffffff;
+    background-color: var(--main-bg-color);
 }
 
 .testimonial-image {
     width: 10%;
     border-radius: 100%;
     margin: 20px;
+}
+
+@media (max-width: 992px) {
+    #title {
+        text-align: center;
+    }
+    #main_img {
+        position: static;
+        transform: rotate(0);
+        width: auto;
+    }
 }
