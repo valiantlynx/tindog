@@ -168,6 +168,6 @@ p {
     #main_img {
         position: static;
         transform: rotate(0);
-        width: auto;
+        width: 100%;
     }
 }
