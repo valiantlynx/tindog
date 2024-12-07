@@ -1,3 +1,2 @@
 TinDog Starting Files
-
-https://valiantlynx.github.io/Website_DigiCV/
+[tinder for dogs](https://valiantlynx.github.io/tindog/)
